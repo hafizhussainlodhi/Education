@@ -5,6 +5,7 @@ import Navbar from './Component/Navbar';
 import { useTheme } from './ThemeContext'; // <--- Yeh import zaroori hai theme check karne ke liye
 import Home from './pages/Home';
 import Teacher from './pages/Teacher';
+import Application from './pages/Applicatoin';
 
 // Dashboard Pages (Agar abhi pages nahi banaye to inhein comment rehne dein)
 // import EducationDashboard from './pages/EducationDashboard';
@@ -43,7 +44,7 @@ const App = () => {
               {/* Filhal test karne ke liye blank headers rakh diye hain */}
               <Route path="/" element={<Home/>} />
               <Route path="/teachers" element={<Teacher/>} />
-              <Route path="/applications" element={<h1 className="text-2xl font-bold">Applications Page</h1>} />
+              <Route path="/applications" element={<Application/>} />
               <Route path="/results" element={<h1 className="text-2xl font-bold">Results Page</h1>} />
               <Route path="/students" element={<h1 className="text-2xl font-bold">Students Page</h1>} />
             </Routes>
